@@ -24,10 +24,10 @@ Source code for the Tokyo Rust community website.
 
 ## TODOs
 
-[ ] Website design
-[ ] Choose a backend framework
-[ ] Choose a frontend framework (or choose no framework, i.e. conventional templating or similar)
-[ ] Feature List
+[] Website design
+[] Choose a backend framework
+[] Choose a frontend framework (or choose no framework, i.e. conventional templating or similar)
+[] Feature List
 
 ## How To Contribute
 
