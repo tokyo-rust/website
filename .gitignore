@@ -12,3 +12,12 @@ Cargo.lock
 
 # MSVC Windows builds of rustc generate these, which store debugging information
 *.pdb
+!.gitkeep
+/static-site/public/*.html
+/static-site/public/*.txt
+/static-site/public/*.xml
+/static-site/public/*.js
+/static-site/public/*.svg
+/static-site/public/*.png
+
+# && cd zola && cargo install --path . --locked && export PATH=$(pwd)/target/release/zola:$PATH && cd - && zola build
