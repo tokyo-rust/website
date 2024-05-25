@@ -25,4 +25,4 @@ jobs:
           aws-region: ap-northeast-1
 
       - name: Deploy static site to S3 bucket
-        run: aws s3 sync . s3://${{ vars.S3_BUCKET }} --delete
+        run: aws s3 sync ./static-site/public s3://${{ vars.S3_BUCKET }} --delete
