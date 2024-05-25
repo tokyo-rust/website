@@ -1,6 +1,42 @@
-.tokyorust-bkg {
-  background-image: url("./tokyo_rust.svg");
+.container {
+  background-color: #000;
   min-height: 100vh;
-  background-size: cover;
-  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rust-img {
+  flex-grow: 1;
+}
+
+.vbox {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+}
+
+body {
+  margin: 0;
+}
+
+.txt-primary {
+  color: #bc002d;
+}
+
+h1 {
+  font-size: 80px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 16px;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+svg {
+  border: 1px solid #0e0;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
 }
