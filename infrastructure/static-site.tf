@@ -128,3 +128,53 @@ resource "aws_route53_record" "tokyorust" {
     evaluate_target_health = false
   }
 }
+
+resource "aws_iam_policy" "tokyorust-static-deployer" {
+  name        = "tokyo-rust-static-deployer"
+  description = "Necessary permissions to deploy the Tokyo Rust static site"
+
+  policy = jsonencode({
+    Version = "2012-10-17",
+    Statement = [
+      {
+        Sid = "AccessToWebsiteBuckets",
+        Effect = "Allow",
+        Action = [
+          "s3:PutBucketWebsite",
+          "s3:PutObject",
+          "s3:PutObjectAcl",
+          "s3:GetObject",
+          "s3:ListBucket",
+          "s3:DeleteObject"
+        ],
+        Resource = [
+          "${aws_s3_bucket.tokyo-rust.arn}",
+          "${aws_s3_bucket.tokyo-rust.arn}/*",
+        ]
+      },
+      {
+        Sid = "AccessToCloudfront",
+        Effect = "Allow",
+        Action = [
+          "cloudfront:GetInvalidation",
+          "cloudfront:CreateInvalidation"],
+        Resource = "*"
+      }
+    ]
+  })
+}
+
+resource "aws_iam_user" "tokyorust-static-deployer" {
+  name = "tokyorust-static-deployer"
+  path = "/"
+
+  tags = {
+    tokyorust = ""
+    static = ""
+  }
+}
+
+resource "aws_iam_user_policy_attachment" "tokyorust-static-deployer" {
+  user   = aws_iam_user.tokyorust-static-deployer.name
+  policy_arn  = aws_iam_policy.tokyorust-static-deployer.arn
+}
