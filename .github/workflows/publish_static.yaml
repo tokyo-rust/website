@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 jobs:
   run:
     runs-on: ubuntu-latest
@@ -17,13 +18,13 @@ jobs:
         run: zola build
       - uses: reggionick/s3-deploy@v4
         env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_ACCESS_KEY_ID: ${{ vars.STATIC_DEPLOYER_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.STATIC_DEPLOYER_SECRET_ACCESS_KEY }}
         with:
           folder: static-site/public
-          bucket: ${{ secrets.S3_BUCKET }}
+          bucket: ${{ vars.S3_BUCKET }}
           private: true
           bucket-region: us-east-1
           # Use the next two only if you have created a CloudFront distribution
-          dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+          dist-id: ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}
           invalidation: /*
