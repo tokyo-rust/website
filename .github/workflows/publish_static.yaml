@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - ./static-site/**/*
   workflow_dispatch:
 jobs:
   run:
