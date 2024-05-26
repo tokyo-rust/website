@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: taiki-e/install-action@v2
         with:
           tool: zola@0.17.2
@@ -20,7 +20,7 @@ jobs:
         run: zola build
 
       - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-access-key-id: ${{ vars.STATIC_DEPLOYER_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.STATIC_DEPLOY_SECRET_ACCESS_KEY }}
