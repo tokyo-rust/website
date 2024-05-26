@@ -19,6 +19,7 @@ Cargo.lock
 /static-site/public/*.js
 /static-site/public/*.svg
 /static-site/public/*.png
+/static-site/public/*.css
 
 .mise.toml
 .terraform

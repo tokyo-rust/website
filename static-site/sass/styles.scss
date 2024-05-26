@@ -10,6 +10,8 @@
   flex-grow: 1;
   max-width: 75vh;
   max-height: 75vh;
+  background-color: white;
+  border-radius: 90%;
 }
 
 .vbox {
@@ -31,10 +33,17 @@ body {
   color: #bc002d;
 }
 
-h1 {
-  font-size: 80px;
+h1, h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 16px;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 40px;
 }
 
 .txt-center {
