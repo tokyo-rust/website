@@ -8,12 +8,19 @@
 
 .rust-img {
   flex-grow: 1;
+  max-width: 75vh;
+  max-height: 75vh;
 }
 
 .vbox {
   display: flex;
   flex-direction: column;
   width: 60vw;
+}
+
+.hbox {
+  display: flex;
+  justify-content: center;
 }
 
 body {
