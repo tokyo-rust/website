@@ -1,4 +1,22 @@
-.container {
+//////////////////////////////////
+///        THEME COLORS        ///
+//////////////////////////////////
+
+$red: #bc002d; // The color of the Japanese flag
+$green: #19a974; // The green from the Rust website
+$purple: #5e2ca5; // The purple from the Rust website
+$yellow: #ffc832; // The yellow from the Rust website
+$gray-100: #f8f9fa;
+
+$primary: $red; // Japanese flag color is primary color
+$headings-color: $gray-100;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$warning: $orange; // Make warning orange since red is now primary
+
+
+.container-1 {
   background-color: #000;
   min-height: 100vh;
   display: flex;
@@ -8,8 +26,8 @@
 
 .rust-img {
   flex-grow: 1;
-  max-width: 70vh;
-  max-height: 70vh;
+  max-width: 65vh;
+  max-height: 65vh;
   background-color: white;
   border-radius: 90%;
   padding: 20px;
@@ -30,11 +48,8 @@ body {
   margin: 0;
 }
 
-.txt-primary {
-  color: #bc002d;
-}
-
-h1, h2 {
+h1,
+h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 16px;
 }

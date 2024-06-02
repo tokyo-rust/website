@@ -1,0 +1,10 @@
+{
+  "name": "static-site",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "5.3.3"
+  },
+  "scripts": {
+    "copy-bootstrap-js": "cp node_modules/bootstrap/dist/js/bootstrap.bundle.min static"
+  }
+}

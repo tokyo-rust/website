@@ -7,11 +7,31 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
+default_language = "en"
 
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
 
+[translations]
+
+
+[languages.jp]
+
 [extra]
 # Put all your custom variables here
+[extra."en"]
+about_us = """\
+"We are a voluntary organization (任意団体) based in Tokyo, Japan. \
+Our mission is to maintain and grow an English-speaking community of Rust users and enthusiasts. \
+We do our best to accommodate Japanese speakers, although our default language is English. \
+Rustaceans of all skill levels are welcome to join our ranks! \
+"""
+[extra.jp]
+about_us = """\
+私たちは、日本の東京に拠点を置く任意団体です。 \
+私たちの使命は、Rust ユーザーと愛好家の英語圏コミュニティを維持し、成長させることです。 \
+デフォルト言語は英語ですが、日本語話者に対応できるよう最善を尽くします。 \
+あらゆるスキルレベルのRustaceanが私たちのランクに加わることを歓迎します!
+"""

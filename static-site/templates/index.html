@@ -1,9 +1,20 @@
 {% extends "base.html" %} {% block content %}
-<div class="vbox">
-  <h1 class="txt-primary txt-center">Tokyo Rust</h1>
-  <div class="hbox">
-    <img class="rust-img" src="./tokyo-rust-opt.svg" />
+<div class="bg-black">
+  <div class="container py-5">
+    <div>
+      <h1 class="text-primary fw-bold p-5 m-0"> {{ section.title }} </h1>
+      <div class="d-flex flex-fill align-items-center">
+        <div class="w-75 px-5 me-3">
+          <p class="h4">{{ config.extra[lang].about_us }}</p>
+        </div>
+        <div class="w-25 flex-fill">
+          <a target=”_blank” href="https://www.meetup.com/tokyo-rust-meetup/" class="btn btn-primary btn-lg">Join our
+            next
+            event!</a>
+        </div>
+      </div>
+    </div>
   </div>
-  <h2 class="txt-primary txt-center">Coming soon...</h2>
 </div>
+<div class="bg-light" style="height:500px"></div>
 {% endblock content %}
