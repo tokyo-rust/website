@@ -1,14 +1,15 @@
 {% extends "base.html" %} {% block content %}
 <div class="bg-black">
-  <div class="container py-5">
+  <div class="container py-5 column-gap-3">
     <div>
-      <h1 class="text-primary fw-bold p-5 m-0"> {{ section.title }} </h1>
-      <div class="d-flex flex-fill align-items-center">
-        <div class="w-75 px-5 me-3">
-          <p class="h4">{{ config.extra[lang].about_us }}</p>
+      <h1 class="text-primary fw-bold p-5 m-0 text-center text-md-start"> {{ section.title }} </h1>
+      <div class="row column-gap-2 px-1 px-md-5 g-2">
+        <div class="col-sm-8 col-lg-9 text-light text-center text-sm-start">
+          <p class="fs-4">{{ config.extra[lang].about_us }}</p>
         </div>
-        <div class="w-25 flex-fill">
-          <a target=”_blank” href="https://www.meetup.com/tokyo-rust-meetup/" class="btn btn-primary btn-lg">Join our
+        <div class="col text-center my-auto">
+          <a target=”_blank” href="https://www.meetup.com/tokyo-rust-meetup/"
+            class="btn btn-primary btn-lg text-light">Join our
             next
             event!</a>
         </div>
