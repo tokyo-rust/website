@@ -2,6 +2,8 @@
 
 **Notice**: We are _not_ a business. We do not sell any products or services. We are an unincorporated, non-profit, voluntary organization. We accept donations only. All we can offer in return is our gratitude. Thank you for your understanding!
 
+| Item | Data |
+| --- | --- |
 | Legal Name | TokyoRust.org |
 | Address | We will disclose without delay if requested. |
 | Phone Number | We will disclose without delay if requested. |
