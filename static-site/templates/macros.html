@@ -1,3 +1,15 @@
 {% macro rust_logo(size) %}
 <img style="width:{{ size * 8 }}px;" src="/tokyo-rust-opt.svg" />
 {% endmacro rust_logo %}
+
+{% macro landing_card(title, content, link, link_text) %}
+<div class="col-md-4 grow d-flex align-items-stretch">
+    <div class="card w-100">
+        <div class="card-body">
+            <h5 class="text-dark">{{ title }}</h5>
+            <p>{{ content }}</p>
+            <a href="{{ link }}" class="btn btn-secondary">{{ link_text }}</a>
+        </div>
+    </div>
+</div>
+{% endmacro landing_card %}

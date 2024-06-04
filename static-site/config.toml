@@ -21,6 +21,10 @@ highlight_code = true
 
 [extra]
 # Put all your custom variables here
+events_page_link = "https://www.meetup.com/tokyo-rust-meetup/"
+
+[landing_cards]
+
 [extra."en"]
 about_us = """\
 Join a community of people who share your interest in the Rust programming language!

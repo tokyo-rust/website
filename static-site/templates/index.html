@@ -1,21 +1,50 @@
 {% extends "base.html" %} {% block content %}
 <div class="bg-black">
-  <div class="container py-5 column-gap-3">
-    <div>
-      <h1 class="text-primary fw-bold p-5 m-0 text-center text-md-start"> {{ section.title }} </h1>
-      <div class="row column-gap-2 px-1 px-md-5 g-2">
-        <div class="col-sm-8 col-lg-9 text-light text-center text-sm-start">
-          <p class="fs-4">{{ config.extra[lang].about_us }}</p>
+  <div class=" py-5 container column-gap-3">
+    <h1 class="text-primary fw-bold p-5 m-0 text-center text-md-start"> {{ section.title }} </h1>
+    <div class="row column-gap-2 px-1 px-md-5 g-2">
+      <div class="col-sm-8 col-lg-9 text-light text-center text-sm-start">
+        <p class="fs-4">{{ config.extra[lang].about_us }}</p>
+      </div>
+      <div class="col text-center my-auto">
+        <a target=”_blank” href="{{ config.extra.events_page_link }}" class="btn btn-primary btn-lg text-light">Join
+          our
+          next
+          event!</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-light">
+  <div class="container py-3 py-sm-5">
+    <div class="row row-gap-3 align-items-stretch grow">
+      {{ macros::landing_card(title="hi", content="hi", link="link", link_text="hi") }}
+      <div class="col-md-4 grow d-flex align-items-stretch">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="text-dark">Monthly Presentations</h5>
+            <p>Join our monthly presentation to learn about various Rust language topics. Free drinks and pizza are
+              served!</p>
+          </div>
         </div>
-        <div class="col text-center my-auto">
-          <a target=”_blank” href="https://www.meetup.com/tokyo-rust-meetup/"
-            class="btn btn-primary btn-lg text-light">Join our
-            next
-            event!</a>
+      </div>
+      <div class="col-md-4 grow d-flex align-items-stretch">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="text-dark">Coffee and Code</h5>
+            <p>On most weekends our members meet to work on projects together. Feel free to join us!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 grow d-flex align-items-stretch">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="text-dark">Ask Us a Question</h5>
+            <p>Our community is full of Rust experts. If you're learning Rust and need some help, please reach out!</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="bg-light" style="height:500px"></div>
 {% endblock content %}
