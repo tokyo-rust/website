@@ -49,18 +49,22 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: 16px;
+  color: $dark;
 }
 
-h1 {
-  font-size: 80px;
-}
+// h1 {
+//   font-size: 80px;
+// }
 
-h2 {
-  font-size: 40px;
-}
+// h2 {
+//   font-size: 40px;
+// }
 
 .txt-center {
   text-align: center;
@@ -79,13 +83,13 @@ svg {
     max-height: 60vh;
   }
 
-  h1 {
-    font-size: 60px;
-  }
+  // h1 {
+  //   font-size: 60px;
+  // }
 
-  h2 {
-    font-size: 40px;
-  }
+  // h2 {
+  //   font-size: 40px;
+  // }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -94,13 +98,13 @@ svg {
     max-height: 42vh;
   }
 
-  h1 {
-    font-size: 44px;
-  }
+  // h1 {
+  //   font-size: 44px;
+  // }
 
-  h2 {
-    font-size: 32px;
-  }
+  // h2 {
+  //   font-size: 32px;
+  // }
 }
 
 @media only screen and (max-width: 600px) {
