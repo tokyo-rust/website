@@ -1,5 +1,6 @@
 name: Build and Publish to AWS
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
