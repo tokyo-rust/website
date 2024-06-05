@@ -10,11 +10,12 @@
   <title>Tokyo Rust</title>
 </head>
 
-<body>
+<body class="bg-light min-vh-100 d-flex flex-column">
   {% include "navbar.html" %}
-  <section class="section">
+  <main class="flex-grow-1">
     <div>{% block content %} {% endblock %}</div>
-  </section>
+  </main>
+  {% include "footer.html" %}
   <script src="/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
 
