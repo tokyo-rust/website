@@ -1,9 +1,23 @@
 +++
 title = "Tokyo Rust"
+
+[extra]
 about_us = """\
-"We are a voluntary organization (任意団体) based in Tokyo, Japan. \
-Our mission is to maintain and grow an English-speaking community of Rust users and enthusiasts. \
-We do our best to accommodate Japanese speakers, although our default language is English. \
-Rustaceans of all skill levels are welcome to join our ranks! \
+ a community of people who share your interest in the Rust programming language!
 """
+extra.join_next_event = "Join our next event!"
+
+# [[extra.landing_cards]]
+# title = "aa"
+# content = "aa"
+
+# [[extra.landing_cards]]
+# title = ""
+# content = ""
+
+# [[extra.landing_cards]]
+# title = ""
+# content = ""
+
+
 +++
