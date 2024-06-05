@@ -23,3 +23,4 @@ Cargo.lock
 
 .mise.toml
 .terraform
+node_modules

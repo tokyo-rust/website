@@ -1,0 +1,19 @@
+<footer class="d-flex flex-wrap justify-content-between align-items-center px-3 py-1 my-4 border-top">
+    <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start align-items-center ">
+        {{ macros::rust_logo(size=3) }}
+        <span class="text-muted ms-1">© {{ now() | date(format="%Y") }} Tokyo Rust</span>
+    </div>
+
+    <ul class="nav col-12 col-md-4 justify-content-center border-bottom">
+        <li class="nav-item"><a href="/commercial-disclosure" class="nav-link px-2 text-muted">Commercial Disclosure</a>
+        </li>
+    </ul>
+
+    <ul class="nav col-12 col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="https://www.meetup.com/tokyo-rust-meetup/">
+                <img height="24px" src="/meetup.svg" />
+            </a></li>
+        <li class="ms-3"><a class="text-muted" href="https://www.youtube.com/@tokyo-rust-org"><img height="24px"
+                    src="/youtube.svg" /></a></li>
+    </ul>
+</footer>
