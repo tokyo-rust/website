@@ -28,7 +28,7 @@ jobs:
 
       - name: Install Node Packages
         id: install-node-packages
-        run: npm install
+        run: cd static-site && npm install
 
       - name: Build Static Site
         id: build-static-site
