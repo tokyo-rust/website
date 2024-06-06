@@ -9,14 +9,14 @@ title = "Commercial Disclosure"
 
 | Item | Data |
 | --- | --- |
-| Legal Name | TokyoRust.org |
-| Address | We will disclose without delay if requested. |
-| Phone Number | We will disclose without delay if requested. |
-| Email Address | hello@tokyorust.org |
-| Head of Operations | Kovacs Mate Janos, representative / 代表 |
-| Additional Fees | No additional fees; we are not a business, and we do not sell anything. |
-| Exchanges & Returns Policy | No return policy; we are not a business, and we do not sell anything. |
-| Delivery Times | No delivery times; we are not a business, and we do not sell anything. |
-| Accepted Payment methods | Credit cards or bank transfer. |
-| Payment Period | No payment period; we are a non-profit, and we accept donations only. |
-| Price | No price; we are not a business, and we do not sell anything. |
+| Legal Name: | TokyoRust.org |
+| Address: | We will disclose without delay if requested. |
+| Phone Number: | We will disclose without delay if requested. |
+| Email Address: | hello@tokyorust.org |
+| Head of Operations: | [Kovacs Mate Janos](https://www.linkedin.com/in/mate-j-kovacs/), representative / 代表 |
+| Additional Fees: | No additional fees; we are not a business, and we do not sell anything. |
+| Exchanges & Returns Policy: | No return policy; we are not a business, and we do not sell anything. |
+| Delivery Times: | No delivery times; we are not a business, and we do not sell anything. |
+| Accepted Payment Methods: | Credit cards or bank transfer. |
+| Payment Period: | No payment period; we are a non-profit, and we accept donations only. |
+| Price: | No price; we are not a business, and we do not sell anything. |
