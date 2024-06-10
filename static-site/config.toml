@@ -46,7 +46,7 @@ cards_header = "Monthly Presentations"
 
 [[extra.en.card]]
 title = "Expand Your Knowledge"
-content = "Learn more about Rust projects, programming practices, and projects."
+content = "Learn more about the language itself, programming practices, and projects."
 
 [[extra.en.card]]
 title = "Meet Likeminded People"
