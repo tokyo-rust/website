@@ -15,7 +15,7 @@ We are a voluntary organization (任意団体) based in Tokyo, Japan. Our missio
 
 ## How We Use Your Donations
 
-In summary, our expenses include:
+In summary, our operating expenses include:
 
 - Paying for computing services such as AWS.
 - Renting venues for in-person events.
