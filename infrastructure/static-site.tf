@@ -1,6 +1,7 @@
 locals {
+  account_id = "381492084234"
   s3_origin_id = "tokyorust-origin"
-  ssl_cert_arn = "arn:aws:acm:us-east-1:381492084234:certificate/44db92d7-e5f4-4bca-b960-a3431da68659"
+  ssl_cert_arn = "arn:aws:acm:us-east-1:${local.account_id}:certificate/44db92d7-e5f4-4bca-b960-a3431da68659"
   host_name = "tokyorust.org"
   domain_name = "www.${local.host_name}"
 }
@@ -20,21 +21,31 @@ resource "aws_s3_bucket_policy" "cloudfront_access_policy" {
 }
 
 data "aws_iam_policy_document" "allow_cloudfront_read_access" {
+  version = "2012-10-17"
   statement {
     actions = [
       "s3:GetObject",
       "s3:ListBucket",
     ]
 
+    principals {
+      type = "service"
+      identifiers = ["cloudfront.amazonaws.com"]
+    }
+
+    effect = "Allow"
+  
     resources = [
       aws_s3_bucket.tokyo-rust.arn,
       "${aws_s3_bucket.tokyo-rust.arn}/*",
     ]
 
-    principals {
-      type        = "AWS"
-      identifiers = [aws_cloudfront_origin_access_identity.tokyorust.iam_arn]
+    condition {
+      test     = "ForAnyValue:StringEquals"
+      variable = "AWS:SourceArn"
+      values   = ["arn:aws:cloudfront::${local.account_id}:distribution/${aws_cloudfront_distribution.s3_distribution.id}"]
     }
+
   }
 }
 
@@ -46,6 +57,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   origin {
     domain_name              = aws_s3_bucket.tokyo-rust.bucket_domain_name
     origin_id                = local.s3_origin_id
+
 
     s3_origin_config {
       origin_access_identity = aws_cloudfront_origin_access_identity.tokyorust.cloudfront_access_identity_path
@@ -177,4 +189,25 @@ resource "aws_iam_user" "tokyorust-static-deployer" {
 resource "aws_iam_user_policy_attachment" "tokyorust-static-deployer" {
   user   = aws_iam_user.tokyorust-static-deployer.name
   policy_arn  = aws_iam_policy.tokyorust-static-deployer.arn
+}
+
+resource "aws_s3_bucket_website_configuration" "tokyorust" {
+  bucket = aws_s3_bucket.tokyo-rust.id
+
+  index_document {
+    suffix = "index.html"
+  }
+
+  error_document {
+    key = "404.html"
+  }
+
+  # routing_rule {
+  #   condition {
+  #     key_prefix_equals = "docs/"
+  #   }
+  #   redirect {
+  #     replace_key_prefix_with = "documents/"
+  #   }
+  # }
 }
