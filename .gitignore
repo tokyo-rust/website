@@ -13,7 +13,7 @@ Cargo.lock
 # MSVC Windows builds of rustc generate these, which store debugging information
 *.pdb
 !.gitkeep
-/static-site/public/*.html
+/static-site/public/**/*.html
 /static-site/public/*.txt
 /static-site/public/*.xml
 /static-site/public/*.js

@@ -41,7 +41,7 @@ data "aws_iam_policy_document" "allow_cloudfront_read_access" {
     ]
 
     condition {
-      test     = "ForAnyValue:StringEquals"
+      test     = "StringEquals"
       variable = "aws:SourceArn"
       values   = [aws_cloudfront_distribution.s3_distribution.arn]
     }
