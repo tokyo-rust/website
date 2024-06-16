@@ -29,7 +29,7 @@ data "aws_iam_policy_document" "allow_cloudfront_read_access" {
     ]
 
     principals {
-      type = "service"
+      type = "Service"
       identifiers = ["cloudfront.amazonaws.com"]
     }
 
@@ -42,11 +42,19 @@ data "aws_iam_policy_document" "allow_cloudfront_read_access" {
 
     condition {
       test     = "ForAnyValue:StringEquals"
-      variable = "AWS:SourceArn"
-      values   = ["arn:aws:cloudfront::${local.account_id}:distribution/${aws_cloudfront_distribution.s3_distribution.id}"]
+      variable = "aws:SourceArn"
+      values   = [aws_cloudfront_distribution.s3_distribution.arn]
     }
 
   }
+}
+
+resource "aws_cloudfront_origin_access_control" "tokyorust" {
+  name                              = "Tokyo-Rust-Access"
+  description                       = "The access control for the Tokyo Rust website."
+  origin_access_control_origin_type = "s3"
+  signing_behavior                  = "always"
+  signing_protocol                  = "sigv4"
 }
 
 resource "aws_cloudfront_origin_access_identity" "tokyorust" {
@@ -57,11 +65,11 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   origin {
     domain_name              = aws_s3_bucket.tokyo-rust.bucket_domain_name
     origin_id                = local.s3_origin_id
+    origin_access_control_id = aws_cloudfront_origin_access_control.tokyorust.id
 
-
-    s3_origin_config {
-      origin_access_identity = aws_cloudfront_origin_access_identity.tokyorust.cloudfront_access_identity_path
-    }
+    # s3_origin_config {
+    #   origin_access_identity = aws_cloudfront_origin_access_identity.tokyorust.cloudfront_access_identity_path
+    # }
   }
 
   aliases = [local.domain_name]
@@ -79,6 +87,8 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
 
   enabled = true
   default_root_object = "index.html"
+  http_version = "http2"
+  is_ipv6_enabled = true
   custom_error_response {
     error_code = 404
     response_code = 404
@@ -91,8 +101,8 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
     cached_methods = ["GET", "HEAD"]
     target_origin_id = local.s3_origin_id
     allowed_methods = ["GET", "HEAD"]
-
-   
+    default_ttl = 86400
+    max_ttl = 31536000
     cache_policy_id = aws_cloudfront_cache_policy.tokyorust.id
   }
 
@@ -202,12 +212,4 @@ resource "aws_s3_bucket_website_configuration" "tokyorust" {
     key = "404.html"
   }
 
-  # routing_rule {
-  #   condition {
-  #     key_prefix_equals = "docs/"
-  #   }
-  #   redirect {
-  #     replace_key_prefix_with = "documents/"
-  #   }
-  # }
 }
