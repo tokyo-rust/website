@@ -1,22 +1,20 @@
 {% import "macros.html" as macros %}
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="icon" href="/tokyo-rust-outline-opt.svg" />
+    <meta charset="utf-8" />
+    <title>Tokyo Rust</title>
+  </head>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/styles.css" />
-  <link rel="icon" href="/tokyo-rust-outline-opt.svg">
-  <meta charset="utf-8" />
-  <title>Tokyo Rust</title>
-</head>
-
-<body class="bg-light min-vh-100 d-flex flex-column">
-  {% include "navbar.html" %}
-  <main class="flex-grow-1">
-    <div>{% block content %} {% endblock %}</div>
-  </main>
-  {% include "footer.html" %}
-  <script src="/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-</body>
-
+  <body class="bg-light min-vh-100 d-flex flex-column">
+    {% include "navbar.html" %}
+    <main class="flex-grow-1">
+      <div>{% block content %} {% endblock %}</div>
+    </main>
+    {% include "footer.html" %}
+    <script src="/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  </body>
 </html>
