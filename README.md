@@ -22,13 +22,6 @@ Source code for the Tokyo Rust community website.
     * Reason: main purpose of site is to share information. People need to be able to find that information easily via search engine
     * This means server-side rendering or conventional templating is prioritiezed over client-side rendering
 
-## TODOs
-
-- [ ] Website design
-- [ ] Choose a backend framework
-- [ ] Choose a frontend framework (or choose no framework, i.e. conventional templating or similar)
-- [ ] Feature List
-
 ## How To Contribute
 
 * Fork this repo
