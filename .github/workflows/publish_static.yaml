@@ -42,6 +42,7 @@ jobs:
         with:
           args: --base ./static-site/public ./static-site/public
           jobSummary: true
+          fail: true
 
       - name: Configure AWS Credentials
         id: configure-aws-creds
