@@ -1,0 +1,29 @@
+name: Check for Broken Links
+on:
+  schedule:
+    - cron: 0 0 * * *
+  repository_dispatch:
+    types: [check-link]
+
+jobs:
+  check:
+    name: Broken Link Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Link Checker
+        id: lychee
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: https://www.tokyorust.org
+          jobSummary: true
+
+      - name: Create Issue From File
+        if: ${{ steps.lychee.outputs.exit_code != 0 }}
+        uses: peter-evans/create-issue-from-file@v4
+        with:
+          title: Link Checker Report
+          content-filepath: ./lychee/out.md
+          labels: report, automated issue
