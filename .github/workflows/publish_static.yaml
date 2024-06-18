@@ -40,7 +40,7 @@ jobs:
         id: lychee
         uses: lycheeverse/lychee-action@v1
         with:
-          args: --base ./public ./public
+          args: --base ./static-site/public ./static-site/public
           jobSummary: true
 
       - name: Configure AWS Credentials
