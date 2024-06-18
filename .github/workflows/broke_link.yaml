@@ -4,6 +4,7 @@ on:
     - cron: 0 0 * * *
   repository_dispatch:
     types: [check-link]
+  workflow_dispatch:
 
 jobs:
   check:
