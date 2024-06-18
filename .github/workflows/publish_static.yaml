@@ -16,7 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         id: checkout
-        
+
       - name: Install Zola
         id: install-zola
         uses: taiki-e/install-action@v2
@@ -35,6 +35,13 @@ jobs:
         id: build-static-site
         working-directory: ./static-site
         run: zola build
+
+      - name: Check Links
+        id: lychee
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: --base ./public ./public
+          jobSummary: true
 
       - name: Configure AWS Credentials
         id: configure-aws-creds
