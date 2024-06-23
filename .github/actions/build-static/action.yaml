@@ -2,7 +2,6 @@ name: Build Static Site
 description: Build the Tokyo Rust static website
 runs:
   using: composite
-  shell: bash
   steps:
     - name: Install Zola
       id: install-zola
@@ -16,9 +15,11 @@ runs:
 
     - name: Install Node Packages
       id: install-node-packages
+      shell: bash
       run: cd static-site && npm install
 
     - name: Build Static Site
       id: build-static-site
+      shell: bash
       working-directory: ./static-site
       run: zola build
