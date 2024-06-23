@@ -2,6 +2,7 @@ name: Test Static Site Links
 description: Test a built static site locally (not the deployed version)
 runs:
   using: composite
+  shell: bash
   steps:
     - name: Check Links
       id: lychee
