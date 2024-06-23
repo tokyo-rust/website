@@ -7,6 +7,6 @@ runs:
       id: lychee
       uses: lycheeverse/lychee-action@v1
       with:
-        args: --base ./static-site/public ./static-site/public
+        args: --accept 200,429 --base ./static-site/public ./static-site/public
         jobSummary: true
         fail: true
