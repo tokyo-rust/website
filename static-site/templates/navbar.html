@@ -8,20 +8,15 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    <a class="nav-link active" aria-current="page" href="/">{{config.extra.translations[lang].home}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://donate.stripe.com/test_14k1731CJ4GK4YodQQ">Donate</a>
+                    <a class="nav-link"
+                        href="{{ config.extra.donate_link }}">{{config.extra.translations[lang].donate}}</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Events
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Upcomming</a></li>
-                        <li><a class="dropdown-item" href="#">Past</a></li>
-                    </ul>
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="{{ config.extra.events_page_link }}">{{config.extra.translations[lang].events}}</a>
                 </li>
             </ul>
         </div>

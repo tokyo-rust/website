@@ -1,57 +1,62 @@
-# The URL the site will be built for
 base_url = "https://www.tokyorust.org"
-
-# Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
-
-# Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
-
 default_language = "en"
+title = "Tokyo Rust"
+description = """
+We are an English-speaking community of Rust users and enthusiasts.
+Rustaceans of all skill levels are welcome to join our ranks!
+"""
 
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
 
-[extra]
-# Put all your custom variables here
-events_page_link = "https://www.meetup.com/tokyo-rust-meetup/"
-
-# about_us = """\
-# We are a voluntary organization (任意団体) based in Tokyo, Japan. \
-# Our mission is to maintain and grow an English-speaking community of Rust users and enthusiasts. \
-# We do our best to accommodate Japanese speakers, although our default language is English. \
-# Rustaceans of all skill levels are welcome to join our ranks! \
-# """
-[extra.jp]
-about_us = """\
-私たちは、日本の東京に拠点を置く任意団体です。 \
-私たちの使命は、Rust ユーザーと愛好家の英語圏コミュニティを維持し、成長させることです。 \
-デフォルト言語は英語ですが、日本語話者に対応できるよう最善を尽くします。 \
+[translations]
+[languages.jp]
+title = "東京Rust"
+description = """
+私たちは、Rust ユーザーと愛好家が集まる英語を話すコミュニティです。
 あらゆるスキルレベルのRustaceanが私たちのランクに加わることを歓迎します!
 """
-join_next_event = "Join our next event!"
 
-[[extra.jp.card]]
-title = "titleeeeeeeeee"
-content = "content"
+[extra]
+events_page_link = "https://guild.host/tokyo-rust/events/upcoming/"
+donate_link = "https://donate.stripe.com/test_14k1731CJ4GK4YodQQ/"
+tokyo_rust_icon = "/tokyo-rust-outline-opt.svg"
 
-[extra.en]
-about_us = """\
- a community of people who share your interest in the Rust programming language!
-"""
-join_next_event = "Join our next event!"
-cards_header = "Monthly Presentations"
+[[extra.socials]]
+name = "meetup"
+icon = "/meetup.svg"
+url = "https://www.meetup.com/tokyo-rust-meetup/"
 
-[[extra.en.card]]
-title = "Expand Your Knowledge"
-content = "Learn more about the language itself, programming practices, and projects."
+[[extra.socials]]
+name = "youtube"
+icon = "/youtube.svg"
+url = "https://www.youtube.com/@tokyo-rust-org"
 
-[[extra.en.card]]
-title = "Meet Likeminded People"
-content = "Socialize other Rust enthusiasts and developers, share ideas, and make friends."
+[[extra.socials]]
+name = "guildhost"
+icon = "/guild-host.png"
+url = "https://guild.host/tokyo-rust"
 
-[[extra.en.card]]
-title = "Free Food and Drinks"
-content = "Each event includes free pizza and beer."
+[[extra.socials]]
+name = "github"
+icon = "/github-icon.png"
+url = "https://github.com/tokyo-rust"
+
+[[extra.socials]]
+name = "linkedin"
+icon = "/linkedin-icon.png"
+url = "https://www.linkedin.com/company/99059952"
+
+[extra.translations.en]
+home = "Home"
+events = "Events"
+donate = "Donate"
+commercial_disclosure = "Commercial Disclosure"
+
+[extra.translations.jp]
+home = "ホーム"
+events = "イベント"
+donate = "寄付"
+commercial_disclosure = "特定商取引法に基づく表記"
