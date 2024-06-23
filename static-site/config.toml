@@ -2,11 +2,61 @@ base_url = "https://www.tokyorust.org"
 compile_sass = true
 build_search_index = true
 default_language = "en"
+title = "Tokyo Rust"
+description = """
+We are an English-speaking community of Rust users and enthusiasts.
+Rustaceans of all skill levels are welcome to join our ranks!
+"""
 
 [markdown]
 highlight_code = true
 
+[translations]
 [languages.jp]
+title = "東京Rust"
+description = """
+私たちは、Rust ユーザーと愛好家が集まる英語を話すコミュニティです。
+あらゆるスキルレベルのRustaceanが私たちのランクに加わることを歓迎します!
+"""
 
 [extra]
-events_page_link = "https://www.meetup.com/tokyo-rust-meetup/"
+events_page_link = "https://guild.host/tokyo-rust/events/upcoming/"
+donate_link = "https://donate.stripe.com/test_14k1731CJ4GK4YodQQ/"
+tokyo_rust_icon = "/tokyo-rust-outline-opt.svg"
+
+[[extra.socials]]
+name = "meetup"
+icon = "/meetup.svg"
+url = "https://www.meetup.com/tokyo-rust-meetup/"
+
+[[extra.socials]]
+name = "youtube"
+icon = "/youtube.svg"
+url = "https://www.youtube.com/@tokyo-rust-org"
+
+[[extra.socials]]
+name = "guildhost"
+icon = "/guild-host.png"
+url = "https://guild.host/tokyo-rust"
+
+[[extra.socials]]
+name = "github"
+icon = "/github-icon.png"
+url = "https://github.com/tokyo-rust"
+
+[[extra.socials]]
+name = "linkedin"
+icon = "/linkedin-icon.png"
+url = "https://www.linkedin.com/company/99059952"
+
+[extra.translations.en]
+home = "Home"
+events = "Events"
+donate = "Donate"
+commercial_disclosure = "Commercial Disclosure"
+
+[extra.translations.jp]
+home = "ホーム"
+events = "イベント"
+donate = "寄付"
+commercial_disclosure = "特定商取引法に基づく表記"
