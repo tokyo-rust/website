@@ -1,0 +1,23 @@
+name: Build Static Site
+description: Build the Tokyo Rust static website
+runs:
+  using: composite
+  steps:
+    - name: Install Zola
+      id: install-zola
+      uses: taiki-e/install-action@v2
+      with:
+        tool: zola@0.17.2
+
+    - name: Setup Node
+      id: setup-node
+      uses: actions/setup-node@v4
+
+    - name: Install Node Packages
+      id: install-node-packages
+      run: cd static-site && npm install
+
+    - name: Build Static Site
+      id: build-static-site
+      working-directory: ./static-site
+      run: zola build
