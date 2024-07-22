@@ -6,7 +6,7 @@ locals {
   domain_name = "www.${local.host_name}"
 }
 
-resource "aws_s3_bucket" "tokyo-rust" {
+resource "aws_s3_bucket" "www_tokyorust" {
   bucket = local.domain_name
 
   tags = {
@@ -15,8 +15,25 @@ resource "aws_s3_bucket" "tokyo-rust" {
   }
 }
 
+resource "aws_s3_bucket" "root_tokyorust" {
+  bucket = local.host_name
+
+  tags = {
+    tokyorust = ""
+   static = ""
+  }
+}
+
+ resource "aws_s3_bucket_website_configuration" "example" {
+  bucket = aws_s3_bucket.root_tokyorust.id
+
+  redirect_all_requests_to {
+    host_name =  "${local.domain_name}"
+  }
+}
+
 resource "aws_s3_bucket_policy" "cloudfront_access_policy" {
-  bucket = aws_s3_bucket.tokyo-rust.id
+  bucket = aws_s3_bucket.www_tokyorust.id
   policy = data.aws_iam_policy_document.allow_cloudfront_read_access.json
 }
 
@@ -36,8 +53,8 @@ data "aws_iam_policy_document" "allow_cloudfront_read_access" {
     effect = "Allow"
   
     resources = [
-      aws_s3_bucket.tokyo-rust.arn,
-      "${aws_s3_bucket.tokyo-rust.arn}/*",
+      aws_s3_bucket.www_tokyorust.arn,
+      "${aws_s3_bucket.www_tokyorust.arn}/*",
     ]
 
     condition {
@@ -63,7 +80,7 @@ resource "aws_cloudfront_origin_access_identity" "tokyorust" {
 
 resource "aws_cloudfront_distribution" "s3_distribution" {
   origin {
-    domain_name              = aws_s3_bucket.tokyo-rust.bucket_domain_name
+    domain_name              = aws_s3_bucket.www_tokyorust.bucket_domain_name
     origin_id                = local.s3_origin_id
     origin_access_control_id = aws_cloudfront_origin_access_control.tokyorust.id
 
@@ -72,7 +89,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
     # }
   }
 
-  aliases = [local.domain_name]
+  aliases = [local.domain_name, local.host_name]
 
   restrictions {
     geo_restriction {
@@ -86,6 +103,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   }
 
   enabled = true
+  comment = "CloudFront distribution for ${local.domain_name}"
   default_root_object = "index.html"
   http_version = "http2"
   is_ipv6_enabled = true
@@ -104,7 +122,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
     default_ttl = 86400
     max_ttl = 31536000
     cache_policy_id = aws_cloudfront_cache_policy.tokyorust.id
-  }
+ }
 
   price_class = "PriceClass_200"
 
@@ -115,7 +133,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
 }
 
 resource "aws_cloudfront_cache_policy" "tokyorust" {
-  name = "tokyo-tust-static-site-cache-policy"
+  name = "tokyo-rust-static-site-cache-policy"
 
   parameters_in_cache_key_and_forwarded_to_origin {
     cookies_config {
@@ -140,9 +158,20 @@ resource "aws_route53_zone" "tokyorust" {
   }
 }
 
-resource "aws_route53_record" "tokyorust" {
+resource "aws_route53_record" "www_tokyorust" {
   zone_id = aws_route53_zone.tokyorust.id
   name    = local.domain_name
+  type    = "A"
+  alias {
+    name = aws_cloudfront_distribution.s3_distribution.domain_name
+    zone_id = aws_cloudfront_distribution.s3_distribution.hosted_zone_id
+    evaluate_target_health = false
+  }
+}
+
+resource "aws_route53_record" "root_tokyorust" {
+  zone_id = aws_route53_zone.tokyorust.id
+  name    = local.host_name
   type    = "A"
   alias {
     name = aws_cloudfront_distribution.s3_distribution.domain_name
@@ -170,8 +199,10 @@ resource "aws_iam_policy" "tokyorust-static-deployer" {
           "s3:DeleteObject"
         ],
         Resource = [
-          "${aws_s3_bucket.tokyo-rust.arn}",
-          "${aws_s3_bucket.tokyo-rust.arn}/*",
+          "${aws_s3_bucket.www_tokyorust.arn}",
+          "${aws_s3_bucket.www_tokyorust.arn}/*",
+          "${aws_s3_bucket.root_tokyorust.arn}",
+          "${aws_s3_bucket.root_tokyorust.arn}/*",
         ]
       },
       {
@@ -179,7 +210,8 @@ resource "aws_iam_policy" "tokyorust-static-deployer" {
         Effect = "Allow",
         Action = [
           "cloudfront:GetInvalidation",
-          "cloudfront:CreateInvalidation"],
+          "cloudfront:CreateInvalidation"
+        ],
         Resource = "*"
       }
     ]
@@ -202,7 +234,7 @@ resource "aws_iam_user_policy_attachment" "tokyorust-static-deployer" {
 }
 
 resource "aws_s3_bucket_website_configuration" "tokyorust" {
-  bucket = aws_s3_bucket.tokyo-rust.id
+  bucket = aws_s3_bucket.www_tokyorust.id
 
   index_document {
     suffix = "index.html"
