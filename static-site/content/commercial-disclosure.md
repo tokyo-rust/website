@@ -40,7 +40,7 @@ In detail, our efforts include, but are not limited to, the following:
 | Email Address: | [donations@tokyorust.org](mailto:donations@tokyorust.org) |
 | Head of Operations: | [Kovacs Mate Janos](https://www.linkedin.com/in/mate-j-kovacs/), representative / 代表 |
 | Price: | We hope to receive a monthly donation in the 1000 to 5000 JPY range from each supporting member, but both smaller and larger amounts are welcome. |
-| Accepted Payment Methods: | Credit cards or bank transfer. |
+| Accepted Payment Methods: | Bank transfer. |
 | Payment Period: | No payment period; we are a non-profit, and we accept donations only. |
 | Additional Fees: | No additional fees; we are not a business, and we do not sell anything. |
 | Exchanges & Returns Policy: | No return policy; we are not a business, and we do not sell anything. |
