@@ -37,7 +37,7 @@ In detail, our efforts include, but are not limited to, the following:
 | Legal Name: | TokyoRust.org |
 | Address: | We will disclose without delay if requested. |
 | Phone Number: | We will disclose without delay if requested. |
-| Email Address: | [hello@tokyorust.org](mailto:hello@tokyorust.org) |
+| Email Address: | [donations@tokyorust.org](mailto:donations@tokyorust.org) |
 | Head of Operations: | [Kovacs Mate Janos](https://www.linkedin.com/in/mate-j-kovacs/), representative / 代表 |
 | Price: | We hope to receive a monthly donation in the 1000 to 5000 JPY range from each supporting member, but both smaller and larger amounts are welcome. |
 | Accepted Payment Methods: | Credit cards or bank transfer. |
