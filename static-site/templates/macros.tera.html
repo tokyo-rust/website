@@ -21,3 +21,11 @@
 {{ url }}index.html
 {%- endif -%}
 {% endmacro get_url -%}
+
+{% macro social_link(name, url, icon) %}
+<li class="ms-3">
+  <a class="text-muted" href="{{ url }}">
+    <img height="24px" alt="{{ name }} icon" src="{{ icon }}" />
+  </a>
+</li>
+{% endmacro social_link %}

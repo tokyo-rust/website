@@ -4,11 +4,12 @@
     <h1 class="text-primary fw-bold p-5 m-0 text-center text-md-start"> {{ section.title }} </h1>
     <div class="row column-gap-2 px-1 px-md-5 g-2">
       <div class="col-sm-8 col-lg-9 text-light text-center text-sm-start">
-        <p class="fs-4">{{ config.extra[lang].about_us }}</p>
+        <!-- {{__tera_context}} -->
+        <p class="fs-4">{{ section.extra.about_us }}</p>
       </div>
       <div class="col text-center my-auto">
         <a target=”_blank” href="{{ config.extra.events_page_link }}" class="btn btn-primary btn-lg text-light">{{
-          config.extra[lang].join_next_event
+          section.extra.join_next_event
           }}</a>
       </div>
     </div>
@@ -16,9 +17,9 @@
 </div>
 <div class="bg-light">
   <div class="container py-3 py-sm-5">
-    <h3 class="text-dark text-center mb-3">{{ config.extra[lang].cards_header }}</h3>
+    <h3 class="text-dark text-center mb-3">{{ section.extra.cards_header }}</h3>
     <div class="row row-gap-3 align-items-stretch grow">
-      {% for card in config.extra[lang].card %}
+      {% for card in section.extra.card %}
       {{ macros::landing_card(title=card.title, content=card.content) }}
       {% endfor %}
     </div>

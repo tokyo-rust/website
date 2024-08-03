@@ -1,0 +1,26 @@
+name: Build Site and Test Links
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - static-site/**
+
+jobs:
+  deploy:
+    name: Build and Test Links
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        id: checkout
+        
+      - name: Build The Site
+        id: build
+        uses: "./.github/actions/build-static"
+
+      - name: Check Links
+        id: lychee
+        uses: "./.github/actions/check-links"
