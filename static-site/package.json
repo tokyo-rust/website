@@ -2,7 +2,7 @@
   "name": "static-site",
   "version": "1.0.0",
   "dependencies": {
-    "bootstrap": "5.3.3"
+    "bootstrap": "5.3.7"
   },
   "scripts": {
     "start": "npm run copy-bootstrap-js && zola serve",
