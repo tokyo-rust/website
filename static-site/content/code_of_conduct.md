@@ -24,14 +24,14 @@ Harassment includes, but is not limited to: offensive comments related to gender
 
 All participants must refrain from disruptive speech or actions, or any other behavior that interferes with the event itself or with other participants. Furthermore, do not bring any items that are prohibited by law or dangerous items that could cause harm or fear to other participants.
 
-If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a nearby event staff member immediately. Alternatively, you may contact us through the inquiry form for each event. When you contact us, please rest assured that we will handle your personal information, including your name, anonymously and in compliance with all applicable laws and regulations, including the Act on the Protection of Personal Information.
+If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a nearby event staff member immediately. When you contact us, please rest assured that we will handle your personal information, including your name, anonymously and in compliance with all applicable laws and regulations, including the Act on the Protection of Personal Information.
 
 ## Enforcement for Violations
 
 If a participant engages in behavior that violates this Code of Conduct, TokyoRust will immediately request that the behavior cease. Depending on the circumstances, we may take appropriate action, including revoking the individual's permission to attend the event. In such cases, you must comply with the instructions of the event staff without delay. Please note that no refunds of event participation fees or other costs will be made in the case of a violation of the Code of Conduct.
 
-This document is released under the [Creative Commons Zero license](https://creativecommons.org/publicdomain/zero/1.0/deed.en).
+This document is released under the Creative Commons Zero license.
 
 Date of Enactment: August 4, 2025
 
-Last Updated: August 4, 2025
+Last Updated: August 4, 2025ugust 4, 2025
