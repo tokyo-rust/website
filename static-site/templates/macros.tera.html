@@ -15,12 +15,16 @@
 
 {% macro get_url(path) -%}
 {% set url = get_url(path=path) | replace(from=config.base_url, to="") -%}
+{%- if config.default_language != lang -%}
+/{{ lang }}
+{%- endif -%}
 {% if url is ending_with(".html") -%}
 {{ url }}
 {% else -%}
 {{ url }}index.html
 {%- endif -%}
-{% endmacro get_url -%}
+
+{%- endmacro get_url -%}
 
 {% macro social_link(name, url, icon) %}
 <li class="ms-3">
