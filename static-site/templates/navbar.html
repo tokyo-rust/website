@@ -8,7 +8,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/">{{config.extra.translations[lang].home}}</a>
+                    <a class="nav-link active" aria-current="page" href="/
+                    {%- if config.default_language != lang -%}
+                        {{ lang }}
+                    {%- endif -%}">{{config.extra.translations[lang].home}}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link"
