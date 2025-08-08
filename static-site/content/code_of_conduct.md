@@ -30,7 +30,7 @@ If you are being harassed, notice that someone else is being harassed, or have a
 
 If a participant engages in behavior that violates this Code of Conduct, TokyoRust will immediately request that the behavior cease. Depending on the circumstances, we may take appropriate action, including revoking the individual's permission to attend the event. In such cases, you must comply with the instructions of the event staff without delay. Please note that no refunds of event participation fees or other costs will be made in the case of a violation of the Code of Conduct.
 
-This document is released under the Creative Commons Zero license.
+This document is released under the [Creative Commons Zero](https://creativecommons.org/publicdomain/zero/1.0/deed.en) license.
 
 Date of Enactment: August 4, 2025
 
