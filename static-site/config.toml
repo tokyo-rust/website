@@ -21,7 +21,7 @@ description = """
 
 [extra]
 events_page_link = "https://guild.host/tokyo-rust/events/upcoming/"
-donate_link = "mailto:donations@tokyorust.org"
+donate_link = "mailto:contact@tokyorust.org"
 tokyo_rust_icon = "/tokyo-rust-outline-opt.svg"
 
 [[extra.socials]]
