@@ -51,6 +51,7 @@ url = "https://www.linkedin.com/company/99059952"
 
 [extra.translations.en]
 home = "Home"
+sponsors = "Sponsors"
 events = "Events"
 donate = "Donate"
 commercial_disclosure = "Commercial Disclosure"
@@ -58,6 +59,7 @@ code_of_conduct = "Code of Conduct"
 
 [extra.translations.jp]
 home = "ホーム"
+sponsors = "スポンサー"
 events = "イベント"
 donate = "寄付"
 commercial_disclosure = "特定商取引法に基づく表記"

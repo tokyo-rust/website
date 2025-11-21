@@ -33,3 +33,23 @@
   </a>
 </li>
 {% endmacro social_link %}
+
+{% macro sponsor_card(name, url, logo_html, description) %}
+<div class="row mb-5 pb-4 align-items-center">
+  <!-- Logo Column -->
+  <div class="col-md-4 text-center mb-3 mb-md-0">
+    <a href="{{ url }}" target="_blank" rel="noopener noreferrer" class="d-inline-block" style="max-width: 100%;">
+      <div style="max-width: 250px; max-height: 100px; overflow: hidden; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+        {{ logo_html | safe }}
+      </div>
+    </a>
+  </div>
+  <!-- Content Column -->
+  <div class="col-md-8">
+    <h3 class="mb-3">
+      <a href="{{ url }}" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-dark">{{ name }}</a>
+    </h3>
+    <p class="mb-0">{{ description }}</p>
+  </div>
+</div>
+{% endmacro sponsor_card %}

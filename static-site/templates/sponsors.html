@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% import "macros.tera.html" as macros %}
+
+{% block content %}
+<div class="container my-5">
+  <h1>{{ page.title }}</h1>
+
+  {{ page.content | safe }}
+
+  <hr class="my-4">
+
+  <div class="my-5">
+    {% for sponsor in page.extra.sponsor %}
+      {{ macros::sponsor_card(name=sponsor.name, url=sponsor.url, logo_html=sponsor.logo_html, description=sponsor.description) }}
+      {% if not loop.last %}
+        <hr class="my-5">
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+{% endblock content %}
