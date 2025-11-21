@@ -51,6 +51,7 @@ url = "https://www.linkedin.com/company/99059952"
 
 [extra.translations.en]
 home = "Home"
+projects = "Projects"
 sponsors = "Sponsors"
 events = "Events"
 donate = "Donate"
@@ -59,6 +60,7 @@ code_of_conduct = "Code of Conduct"
 
 [extra.translations.jp]
 home = "ホーム"
+projects = "プロジェクト"
 sponsors = "スポンサー"
 events = "イベント"
 donate = "寄付"

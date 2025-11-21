@@ -1,4 +1,5 @@
 [tools]
+gum = "latest"
 zola = "latest"
 
 [tasks.init]

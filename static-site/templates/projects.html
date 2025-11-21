@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% import "macros.tera.html" as macros %}
+
+{% block content %}
+<div class="container my-5">
+  <h1>{{ page.title }}</h1>
+
+  {{ page.description | safe }}
+
+  <hr class="my-4">
+
+  <div class="my-5">
+    {% if page.extra.project %}
+      {% for project in page.extra.project %}
+        {{ macros::project_card(name=project.name, url=project.url, logo_url=project.logo_url, description=project.description) }}
+      {% endfor %}
+    {% else %}
+      <div class="alert alert-info" role="alert">
+        <strong>No projects yet!</strong> Be the first to add your project using the instructions above.
+      </div>
+    {% endif %}
+  </div>
+
+  <hr class="my-4">
+
+  {{ page.content | safe }}
+
+</div>
+{% endblock content %}
