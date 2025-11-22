@@ -1,0 +1,38 @@
+name: Deploy to Netlify
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - static-site/**
+  pull_request:
+    paths:
+      - static-site/**
+
+jobs:
+  deploy:
+    name: Build and Deploy to Netlify
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build The Site
+        uses: "./.github/actions/build-static"
+
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v3.0
+        with:
+          publish-dir: './static-site/public'
+          production-branch: main
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-message: "Deploy from GitHub Actions"
+          enable-pull-request-comment: true
+          enable-commit-comment: false
+          overwrites-pull-request-comment: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        timeout-minutes: 5

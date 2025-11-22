@@ -24,3 +24,5 @@ Cargo.lock
 .mise.toml
 .terraform
 node_modules
+# Local Netlify folder
+.netlify
