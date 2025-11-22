@@ -1,0 +1,12 @@
+[tools]
+gum = "latest"
+zola = "latest"
+
+[tasks.init]
+description = "Initialize Zola and dependencies"
+run = "npm i"
+
+[tasks.dev]
+description = "Run Zola in serve/dev mode"
+depends = ["init"]
+run = "zola serve"
