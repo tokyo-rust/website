@@ -25,6 +25,11 @@ description = "Specifications are a common ground across correctness tools in th
 name = "MFEM-rs"
 url = "https://github.com/mkovaxx/mfem-rs"
 description = "Rust wrapper for MFEM; a free, lightweight, scalable C++ library for finite element methods."
+
+[[extra.project]]
+name = "Unifont-rs"
+url = "https://github.com/mkovaxx/unifont-rs"
+description = "Unifont provides a monochrome bitmap font that covers the entire Unicode Basic Multilingual Plane. Halfwidth glyphs are 8x16, fullwidth are 16x16 pixels. Supports #[no_std] builds."
 +++
 
 
