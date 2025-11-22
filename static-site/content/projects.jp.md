@@ -14,6 +14,17 @@ name = "Sarekt"
 url = "https://github.com/brandonpollack23/sarekt"
 logo_url = "https://raw.githubusercontent.com/brandonpollack23/sarekt/master/sarekt_screenshot.png"
 description = "ラストで実行したよくないVulkan／Ash三次元レンダラー"
+
+[[extra.project]]
+name = "Anodized"
+url = "https://github.com/mkovaxx/anodized"
+logo_url = "https://raw.githubusercontent.com/mkovaxx/anodized/main/assets/logo.svg"
+description = "Specifications are a common ground across correctness tools in the Rust ecosystem. Anodized provides spec annotations that are checked for syntax and type errors at compile time, and have an ergonomic and expressive syntax. Specs are checked at runtime by default. Integration with other tools like fuzzers and formal verifiers is also on the roadmap."
+
+[[extra.project]]
+name = "MFEM-rs"
+url = "https://github.com/mkovaxx/mfem-rs"
+description = "Rust wrapper for MFEM; a free, lightweight, scalable C++ library for finite element methods."
 +++
 
 
