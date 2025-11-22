@@ -3,6 +3,17 @@ title = "Community Projects"
 template = "projects.html"
 description = "Check out projects built by Tokyo Rust community members! From tools and libraries to applications and experiments, our members are creating amazing things with Rust."
 
+[[extra.project]]
+name = "Anodized"
+url = "https://github.com/mkovaxx/anodized"
+logo_url = "https://raw.githubusercontent.com/mkovaxx/anodized/main/assets/logo.svg"
+description = "Specifications are a common ground across correctness tools in the Rust ecosystem. Anodized provides spec annotations that are checked for syntax and type errors at compile time, and have an ergonomic and expressive syntax. Specs are enforced at runtime by default. Integration with other tools like fuzzers and formal verifiers is also on the roadmap."
+
+[[extra.project]]
+name = "MFEM-rs"
+url = "https://github.com/mkovaxx/mfem-rs"
+logo_url = ""
+description = "Rust wrapper for MFEM; a free, lightweight, scalable C++ library for finite element methods."
 
 [[extra.project]]
 name = "Shizen"
@@ -17,19 +28,9 @@ logo_url = "https://raw.githubusercontent.com/brandonpollack23/sarekt/master/sar
 description = "A bad renderer implemented with ash/vulkan in rust some years ago"
 
 [[extra.project]]
-name = "Anodized"
-url = "https://github.com/mkovaxx/anodized"
-logo_url = "https://raw.githubusercontent.com/mkovaxx/anodized/main/assets/logo.svg"
-description = "Specifications are a common ground across correctness tools in the Rust ecosystem. Anodized provides spec annotations that are checked for syntax and type errors at compile time, and have an ergonomic and expressive syntax. Specs are checked at runtime by default. Integration with other tools like fuzzers and formal verifiers is also on the roadmap."
-
-[[extra.project]]
-name = "MFEM-rs"
-url = "https://github.com/mkovaxx/mfem-rs"
-description = "Rust wrapper for MFEM; a free, lightweight, scalable C++ library for finite element methods."
-
-[[extra.project]]
 name = "Unifont-rs"
 url = "https://github.com/mkovaxx/unifont-rs"
+logo_url = ""
 description = "Unifont provides a monochrome bitmap font that covers the entire Unicode Basic Multilingual Plane. Halfwidth glyphs are 8x16, fullwidth are 16x16 pixels. Supports #[no_std] builds."
 +++
 
