@@ -16,6 +16,16 @@ logo_url = ""
 description = "Rust wrapper for MFEM; a free, lightweight, scalable C++ library for finite element methods."
 
 [[extra.project]]
+name = "MORK"
+url = "https://github.com/trueagi-io/MORK/"
+description = "MORK is a data transformation engine designed for applications that need to work with billions of entities efficiently.  Initially designed for symbolic AI applications, to become the back for the [MeTTa language](https://metta.lang), it is now used by a growing list of folks in domains from genomics to financial pattern mining.  MORK stores a space of S-Expressions and provides unification over atoms in the space.  It can be accessed via an hyper-based HTTP server, although some users have linked it directly as a library."
+
+[[extra.project]]
+name = "pathmap"
+url = "https://github.com/adam-Vandervorst/pathMap/"
+description = "Very compact radix-256 trie with shared subtries, concurrent access API, path-algebraic ops such as union, intersection, subtract, etc., a read-only format that maps directly from a file, and a number of other features to make it effective for working with massive amounts of data."
+
+[[extra.project]]
 name = "Shizen"
 url = "https://github.com/brandonpollack23/shizen-again"
 logo_url = "https://github.com/brandonpollack23.png?size=200"
@@ -32,16 +42,6 @@ name = "Unifont-rs"
 url = "https://github.com/mkovaxx/unifont-rs"
 logo_url = ""
 description = "Unifont provides a monochrome bitmap font that covers the entire Unicode Basic Multilingual Plane. Halfwidth glyphs are 8x16, fullwidth are 16x16 pixels. Supports #[no_std] builds."
-
-[[extra.project]]
-name = "MORK"
-url = "https://github.com/trueagi-io/MORK/"
-description = "MORK is a data transformation engine designed for applications that need to work with billions of entities efficiently.  Initially designed for symbolic AI applications, to become the back for the [MeTTa language](https://metta.lang), it is now used by a growing list of folks in domains from genomics to financial pattern mining.  MORK stores a space of S-Expressions and provides unification over atoms in the space.  It can be accessed via an hyper-based HTTP server, although some users have linked it directly as a library."
-
-[[extra.project]]
-name = "pathmap"
-url = "https://github.com/adam-Vandervorst/pathMap/"
-description = "Very compact radix-256 trie with shared subtries, concurrent access API, path-algebraic ops such as union, intersection, subtract, etc., a read-only format that maps directly from a file, and a number of other features to make it effective for working with massive amounts of data."
 +++
 
 ## Add Your Project
