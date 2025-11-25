@@ -32,6 +32,18 @@ name = "Unifont-rs"
 url = "https://github.com/mkovaxx/unifont-rs"
 logo_url = ""
 description = "Unifont provides a monochrome bitmap font that covers the entire Unicode Basic Multilingual Plane. Halfwidth glyphs are 8x16, fullwidth are 16x16 pixels. Supports #[no_std] builds."
+
+[[extra.project]]
+name = "MORK"
+url = "https://github.com/trueagi-io/MORK/"
+description = "MORKは、数十億規模のエンティティを効率的に扱う必要があるアプリケーション向けに設計されたデータ変換エンジンです。もともとは象徴的AIアプリケーション、特に [MeTTa言語](https://metta.lang) のバックエンドとなることを目的に設計されましたが、現在ではゲノミクスから金融パターン解析まで、さまざまな分野で利用するユーザーが増えています。  
+MORKはS式の空間を保存し、その空間内のアトムに対する単一化を提供します。  
+また、HyperベースのHTTPサーバー経由でアクセスできるほか、ライブラリとして直接リンクして利用することも可能です。"
+
+[[extra.project]]
+name = "pathmap"
+url = "https://github.com/adam-Vandervorst/pathMap/"
+description = "共有サブトライを備えた非常にコンパクトなラジックス256トライで、並行アクセスAPI、和・積・差などのパス代数演算、ファイルから直接マッピング可能な読み取り専用フォーマット、そして大量データを扱う際に有効となる多くの機能を備えています。"
 +++
 
 ## プロジェクトを追加する
