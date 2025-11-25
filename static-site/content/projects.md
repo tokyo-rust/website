@@ -19,7 +19,7 @@ description = "Rust wrapper for MFEM; a free, lightweight, scalable C++ library 
 name = "MORK"
 url = "https://github.com/trueagi-io/MORK/"
 logo_url = ""
-description = "MORK is a data transformation engine designed for applications that need to work with billions of entities efficiently.  Initially designed for symbolic AI applications, to become the back for the [MeTTa language](https://metta-lang.dev), it is now used by a growing list of folks in domains from genomics to financial pattern mining.  MORK stores a space of S-Expressions and provides unification over atoms in the space.  It can be accessed via an hyper-based HTTP server, although some users have linked it directly as a library."
+description = "MORK is a data transformation engine designed for applications that need to work with billions of entities efficiently.  Initially designed for symbolic AI applications, to become the back for the MeTTa language (https://metta-lang.dev), it is now used by a growing list of folks in domains from genomics to financial pattern mining.  MORK stores a space of S-Expressions and provides unification over atoms in the space.  It can be accessed via an hyper-based HTTP server, although some users have linked it directly as a library."
 
 [[extra.project]]
 name = "pathmap"
