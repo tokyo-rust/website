@@ -2,9 +2,9 @@
 title = "東京Rust"
 
 [extra]
-about_us = """\
-Rust プログラミング言語への興味を共有する人々のコミュニティです。
-"""
+about_us = [
+    "Rust プログラミング言語への興味を共有する人々のコミュニティです。"
+]
 join_next_event = "次のイベントにご参!"
 cards_header = "月例プレゼンテーション"
 
