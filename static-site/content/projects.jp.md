@@ -4,7 +4,7 @@ template = "projects.html"
 description = """\
 東京Rustコミュニティメンバーが作成したプロジェクトをご覧ください！ツールやライブラリからアプリケーションや実験まで、私たちのメンバーはRustで素晴らしいものを作っています。
 
-To add your project to this page, follow [this guide](https://github.com/tokyo-rust/website/blob/main/ADD_PROJECT_JP.md).
+プロジェクトを追加するには、[このガイド](https://github.com/tokyo-rust/website/blob/main/ADD_PROJECT_JA.md)に従ってください。
 """
 
 [[extra.project]]
