@@ -1,10 +1,11 @@
 +++
 title = "コミュニティプロジェクト"
 template = "projects.html"
-description = "東京Rustコミュニティメンバーが作成したプロジェクトをご覧ください！ツールやライブラリからアプリケーションや実験まで、私たちのメンバーはRustで素晴らしいものを作っています。"
+description = """\
+東京Rustコミュニティメンバーが作成したプロジェクトをご覧ください！ツールやライブラリからアプリケーションや実験まで、私たちのメンバーはRustで素晴らしいものを作っています。
 
-how_to_add_text = "TODO:"
-how_to_add_link = "https://github.com/tokyo-rust/website/blob/main/ADD_PROJECT_JA.md"
+To add your project to this page, follow [this guide](https://github.com/tokyo-rust/website/blob/main/ADD_PROJECT_JP.md).
+"""
 
 [[extra.project]]
 name = "Anodized"

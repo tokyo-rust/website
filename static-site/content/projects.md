@@ -1,10 +1,11 @@
 +++
 title = "Community Projects"
 template = "projects.html"
-description = "Check out projects built by Tokyo Rust community members! From tools and libraries to applications and experiments, our members are creating amazing things with Rust."
+description = """\
+Check out projects built by Tokyo Rust community members! From tools and libraries to applications and experiments, our members are creating amazing things with Rust.
 
-how_to_add_text = "To add your project to this page, follow the guide here:"
-how_to_add_link = "https://github.com/tokyo-rust/website/blob/main/ADD_PROJECT_EN.md"
+To add your project to this page, follow [this guide](https://github.com/tokyo-rust/website/blob/main/ADD_PROJECT_EN.md).
+"""
 
 [[extra.project]]
 name = "Anodized"

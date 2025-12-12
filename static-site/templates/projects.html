@@ -5,7 +5,7 @@
 <div class="container my-5">
   <h1>{{ page.title }}</h1>
 
-  {{ page.description | safe }}
+  {{ page.description | markdown(inline=true) | safe }}</p>
 
   <hr class="my-4">
 
