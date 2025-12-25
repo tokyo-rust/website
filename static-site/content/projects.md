@@ -48,4 +48,10 @@ name = "Unifont-rs"
 url = "https://github.com/mkovaxx/unifont-rs"
 logo_url = ""
 description = "Unifont provides a monochrome bitmap font that covers the entire Unicode Basic Multilingual Plane. Halfwidth glyphs are 8x16, fullwidth are 16x16 pixels. Supports #[no_std] builds."
+
+[[extra.project]]
+name = "Fungi"
+url = "https://github.com/enbop/fungi"
+logo_url = "https://raw.githubusercontent.com/enbop/fungi/6d5d791090f529e4fbb0e4d0238e99084b502aa4/assets/FullLogo_Transparent_NoBuffer.png"
+description = "Fungi is a gateway for seamlessly exporting your services within a private P2P network. With Fungi, you can securely forward ports, transfer files, deploy WASI apps, or simply use it as a lightweight NAS."
 +++
