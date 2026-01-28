@@ -49,6 +49,11 @@ name = "linkedin"
 icon = "/linkedin-icon.png"
 url = "https://www.linkedin.com/company/99059952"
 
+[[extra.socials]]
+name = "discord"
+icon = "/discord.svg"
+url = "https://discord.gg/S5YDb8GVz2"
+
 [extra.translations.en]
 home = "Home"
 projects = "Projects"
