@@ -14,6 +14,18 @@ logo_url = "https://raw.githubusercontent.com/mkovaxx/anodized/main/assets/logo.
 description = "Specifications are a common ground across correctness tools in the Rust ecosystem. Anodized provides spec annotations that are checked for syntax and type errors at compile time, and have an ergonomic and expressive syntax. Specs are enforced at runtime by default. Integration with other tools like fuzzers and formal verifiers is also on the roadmap."
 
 [[extra.project]]
+name = "Cargo Usage Rules"
+url = "https://github.com/univalent-cc/cargo_usage_rules"
+logo_url = "https://github.com/univalent-cc.png?size=200"
+description = "Cargo usage rules is a project inspired by ash usage rules (https://github.com/ash-project/usage_rules) which allows you to easily generate a usage rules file AGENTS.md as a flat file or index into a directory so your local agent programming assistant can understand how to utilize your libraries."
+
+[[extra.project]]
+name = "Fungi"
+url = "https://github.com/enbop/fungi"
+logo_url = "https://raw.githubusercontent.com/enbop/fungi/6d5d791090f529e4fbb0e4d0238e99084b502aa4/assets/FullLogo_Transparent_NoBuffer.png"
+description = "Fungi is a gateway for seamlessly exporting your services within a private P2P network. With Fungi, you can securely forward ports, transfer files, deploy WASI apps, or simply use it as a lightweight NAS."
+
+[[extra.project]]
 name = "MFEM-rs"
 url = "https://github.com/mkovaxx/mfem-rs"
 logo_url = ""
@@ -44,14 +56,14 @@ logo_url = "https://raw.githubusercontent.com/brandonpollack23/sarekt/master/sar
 description = "A bad renderer implemented with ash/vulkan in rust some years ago"
 
 [[extra.project]]
+name = "ShaderJoy"
+url = "https://github.com/tokyo-rust/shaderjoy"
+logo_url = "https://github.com/tokyo-rust.png?size=200"
+description = "Shaderjoy was a hackathon project created by Mate, Brandon, and Luke representing Tokyo Rust.  It is a shader generator that uses LLMs to write shader code and a latent space of words to inform their generation and then continues to genetically refine your shaders of choice."
+
+[[extra.project]]
 name = "Unifont-rs"
 url = "https://github.com/mkovaxx/unifont-rs"
 logo_url = ""
 description = "Unifont provides a monochrome bitmap font that covers the entire Unicode Basic Multilingual Plane. Halfwidth glyphs are 8x16, fullwidth are 16x16 pixels. Supports #[no_std] builds."
-
-[[extra.project]]
-name = "Fungi"
-url = "https://github.com/enbop/fungi"
-logo_url = "https://raw.githubusercontent.com/enbop/fungi/6d5d791090f529e4fbb0e4d0238e99084b502aa4/assets/FullLogo_Transparent_NoBuffer.png"
-description = "Fungi is a gateway for seamlessly exporting your services within a private P2P network. With Fungi, you can securely forward ports, transfer files, deploy WASI apps, or simply use it as a lightweight NAS."
 +++

@@ -14,6 +14,18 @@ logo_url = "https://raw.githubusercontent.com/mkovaxx/anodized/main/assets/logo.
 description = "Specifications are a common ground across correctness tools in the Rust ecosystem. Anodized provides spec annotations that are checked for syntax and type errors at compile time, and have an ergonomic and expressive syntax. Specs are enforced at runtime by default. Integration with other tools like fuzzers and formal verifiers is also on the roadmap."
 
 [[extra.project]]
+name = "Cargo Usage Rules"
+url = "https://github.com/univalent-cc/cargo_usage_rules"
+logo_url = "https://github.com/univalent-cc.png?size=200"
+description = "「Cargo usage rules」は、ash usage rules (https://github.com/ash-project/usage_rules)にインスパイアされたプロジェクトです。このツールを使うと、ローカルのエージェント・プログラミング・アシスタントがライブラリの利用方法を理解できるようにするための利用ルールファイル AGENTS.md を、フラットファイルまたはディレクトリへのインデックスとして簡単に生成できます。"
+
+[[extra.project]]
+name = "Fungi"
+url = "https://github.com/enbop/fungi"
+logo_url = "https://raw.githubusercontent.com/enbop/fungi/6d5d791090f529e4fbb0e4d0238e99084b502aa4/assets/FullLogo_Transparent_NoBuffer.png"
+description = "Fungiは、プライベートP2Pネットワーク内でサービスをシームレスにエクスポートするためのゲートウェイです。Fungiを使用すると、ポートの安全な転送、ファイルの転送、WASIアプリのデプロイ、または軽量NASとしての使用が可能です。"
+
+[[extra.project]]
 name = "MFEM-rs"
 url = "https://github.com/mkovaxx/mfem-rs"
 logo_url = ""
@@ -44,14 +56,14 @@ logo_url = "https://raw.githubusercontent.com/brandonpollack23/sarekt/master/sar
 description = "ラストで実行したよくないVulkan／Ash三次元レンダラー"
 
 [[extra.project]]
+name = "ShaderJoy"
+url = "https://github.com/tokyo-rust/shaderjoy"
+logo_url = "https://github.com/tokyo-rust.png?size=200"
+description = "Shaderjoyは、Tokyo Rustを代表するMate、Brandon、Lukeによって作成されたハッカソンプロジェクトです。これはLLM（大規模言語モデル）を使用してシェーダーコードを記述するジェネレーターであり、単語のLatent Spaceを用いて生成プロセスに情報を与え、さらにユーザーが選択したシェーダーを遺伝的アルゴリズムによって継続的に洗練させていきます。"
+
+[[extra.project]]
 name = "Unifont-rs"
 url = "https://github.com/mkovaxx/unifont-rs"
 logo_url = ""
 description = "Unifont provides a monochrome bitmap font that covers the entire Unicode Basic Multilingual Plane. Halfwidth glyphs are 8x16, fullwidth are 16x16 pixels. Supports #[no_std] builds."
-
-[[extra.project]]
-name = "Fungi"
-url = "https://github.com/enbop/fungi"
-logo_url = "https://raw.githubusercontent.com/enbop/fungi/6d5d791090f529e4fbb0e4d0238e99084b502aa4/assets/FullLogo_Transparent_NoBuffer.png"
-description = "Fungiは、プライベートP2Pネットワーク内でサービスをシームレスにエクスポートするためのゲートウェイです。Fungiを使用すると、ポートの安全な転送、ファイルの転送、WASIアプリのデプロイ、または軽量NASとしての使用が可能です。"
 +++
