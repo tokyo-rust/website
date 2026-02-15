@@ -66,4 +66,10 @@ name = "Unifont-rs"
 url = "https://github.com/mkovaxx/unifont-rs"
 logo_url = ""
 description = "Unifont provides a monochrome bitmap font that covers the entire Unicode Basic Multilingual Plane. Halfwidth glyphs are 8x16, fullwidth are 16x16 pixels. Supports #[no_std] builds."
+
+[[extra.project]]
+name = "oauth2-passkey"
+url = "https://github.com/ktaka-ccmp/oauth2-passkey"
+logo_url = "https://raw.githubusercontent.com/ktaka-ccmp/oauth2-passkey/refs/heads/master/assets/o2p_logo_tight.svg"
+description = "OAuth2 and WebAuthn/Passkey authentication library for Rust web applications. Provides Google OAuth2 login, FIDO2 passkey registration/authentication, session management, and admin UI with Axum framework integration. Supports SQLite/PostgreSQL and Redis/in-memory storage backends."
 +++
