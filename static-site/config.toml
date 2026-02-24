@@ -25,11 +25,6 @@ donate_link = "mailto:contact@tokyorust.org"
 tokyo_rust_icon = "/tokyo-rust-outline-opt.svg"
 
 [[extra.socials]]
-name = "meetup"
-icon = "/meetup.svg"
-url = "https://www.meetup.com/tokyo-rust-meetup/"
-
-[[extra.socials]]
 name = "youtube"
 icon = "/youtube.svg"
 url = "https://www.youtube.com/@tokyo-rust-org"
