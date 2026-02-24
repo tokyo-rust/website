@@ -38,6 +38,12 @@ logo_url = ""
 description = "MORK is a data transformation engine designed for applications that need to work with billions of entities efficiently.  Initially designed for symbolic AI applications, to become the back for the MeTTa language (https://metta-lang.dev), it is now used by a growing list of folks in domains from genomics to financial pattern mining.  MORK stores a space of S-Expressions and provides unification over atoms in the space.  It can be accessed via an hyper-based HTTP server, although some users have linked it directly as a library."
 
 [[extra.project]]
+name = "oauth2-passkey"
+url = "https://github.com/ktaka-ccmp/oauth2-passkey"
+logo_url = "https://raw.githubusercontent.com/ktaka-ccmp/oauth2-passkey/refs/heads/master/assets/o2p_logo_tight.svg"
+description = "OAuth2 and WebAuthn/Passkey authentication library for Rust web applications. Provides Google OAuth2 login, FIDO2 passkey registration/authentication, session management, and admin UI with Axum framework integration. Supports SQLite/PostgreSQL and Redis/in-memory storage backends."
+
+[[extra.project]]
 name = "pathmap"
 url = "https://github.com/adam-Vandervorst/pathMap/"
 logo_url = ""
