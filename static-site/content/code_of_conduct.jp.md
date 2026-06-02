@@ -32,4 +32,6 @@ title = "行動規範"
 
 ※本文書は[Creative Commons Zero license](https://creativecommons.org/publicdomain/zero/1.0/deed.ja) で公開されています。
 
-制定日：20
+制定日：2025年8月4日
+
+最終更新日：2025年8月4日

@@ -34,4 +34,4 @@ This document is released under the [Creative Commons Zero](https://creativecomm
 
 Date of Enactment: August 4, 2025
 
-Last Updated: August 4, 2025ugust 4, 2025
+Last Updated: August 4, 2025
