@@ -36,7 +36,7 @@ In detail, our efforts include, but are not limited to, the following:
 | Item                    | Data                                                                         |
 | ----------------------- | ---------------------------------------------------------------------------- |
 | Legal Name              | Tokyo Rust Organization                                                      |
-| Registration            | 3011005011499                                                                |
+| Corporate Number        | 3011005011499                                                                |
 | Email Address           | [contact@tokyorust.org](mailto:contact@tokyorust.org)                        |
 | Representative Director | [Brandon Ross Pollack](https://www.linkedin.com/in/brandon-pollack-58b61542) |
 | Director (VP)           | [Mate Janos Kovacs](https://www.linkedin.com/in/mate-j-kovacs)               |
