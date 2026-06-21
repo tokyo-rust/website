@@ -8,7 +8,7 @@ title = "About Us"
 
 ## Our Mission
 
-We are an NFPO dedicated to the success of the Rust Programming Language and its users in Japan.
+We are an NFPO dedicated to the growth of the Rust Programming Language and the success of its users in Japan.
 
 ## Who We Are
 
