@@ -1,8 +1,8 @@
 +++
-title = "Company Profile"
+title = "About Us"
 +++
 
-# Company Profile
+# About Us
 
 <br>
 
@@ -31,7 +31,7 @@ In detail, our efforts include, but are not limited to, the following:
 - Maintain and facilitate projects that contribute to open-source software.
 - Organize events where members can collaborate towards a common goal or theme.
 
-## Administrative Details
+## Organization Details
 
 | Item                    | Data                                                                         |
 | ----------------------- | ---------------------------------------------------------------------------- |
