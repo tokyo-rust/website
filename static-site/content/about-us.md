@@ -35,7 +35,8 @@ In detail, our efforts include, but are not limited to, the following:
 
 | Item                    | Data                                                                         |
 | ----------------------- | ---------------------------------------------------------------------------- |
-| Legal Name              | Tokyo Rust Organization                                                      |
+| English Name            | Tokyo Rust Organization                                                      |
+| Legal Name              | TokyoRust協会一般社団法人                                                    |
 | Corporate Number        | 3011005011499                                                                |
 | Email Address           | [contact@tokyorust.org](mailto:contact@tokyorust.org)                        |
 | Representative Director | [Brandon Ross Pollack](https://www.linkedin.com/in/brandon-pollack-58b61542) |
