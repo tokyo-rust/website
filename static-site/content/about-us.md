@@ -12,7 +12,7 @@ We are an NFPO dedicated to the success of the Rust Programming Language and its
 
 ## Who We Are
 
-We are an incorporated not-for-profit organization based in Tokyo. We accept donations, and offer in return our gratitude and dedication to the Rust community. Thank you for your understanding!
+We are an incorporated not-for-profit organization based in Tokyo. We accept donations, and offer in return our gratitude and dedication to the Rust community. Thank you for your support!
 
 ## How We Use Your Donations
 
