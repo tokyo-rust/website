@@ -15,13 +15,13 @@ cards_header = "Monthly Presentations"
 
 [[extra.card]]
 title = "Expand Your Knowledge"
-content = "Learn more about the language itself, programming practices, and projects."
+content = "Learn about Rust from practitioners who use it in professional or personal projects."
 
 [[extra.card]]
 title = "Meet Likeminded People"
-content = "Socialize other Rust enthusiasts and developers, share ideas, and make friends."
+content = "Connect with other Rust enthusiasts and experts, share ideas, and build together."
 
 [[extra.card]]
-title = "Free Food and Drinks"
-content = "Each event includes free pizza and beer."
+title = "Find Rust Opportunities"
+content = "Be the first to hear about new openings that need Rust skills in Tokyo or Japan."
 +++
