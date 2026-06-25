@@ -23,5 +23,5 @@ content = "Connect with other Rust enthusiasts and experts, share ideas, and bui
 
 [[extra.card]]
 title = "Find Rust Opportunities"
-content = "Be the first to hear about new openings that need Rust skills in Tokyo or Japan."
+content = "Hear the latest news from fellow members about Rust openings at their workplaces."
 +++
