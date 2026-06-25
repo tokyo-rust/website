@@ -10,7 +10,7 @@ about_us = [
     "Rustaceanの支援ネットワークを構築し、言語に関する議論を促し、日本の主要産業との高い親和性を示すことで、日本におけるRustの普及を推進しています。"
 ]
 join_next_event = "次のイベントにご参!"
-cards_header = "月例プレゼンテーション"
+cards_header = "トーク、ワークショップ、ハッカソンなど！"
 
 [[extra.card]]
 title = "知識を広げる"
