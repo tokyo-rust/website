@@ -3,7 +3,7 @@ title = "Tokyo Rust"
 
 [extra]
 about_us = [
-    "We are a non-profit organization dedicated to the success of the Rust programming language in Japan.",
+    "We are an NFPO dedicated to the success of the Rust programming language in Japan.",
 
     "We believe that Rust is a perfect match for Japanese engineering values such as diligence, risk management, and coordinated effort. Japan is also a leader in industries that benefit the most from Rust's capabilities, such as infrastructure, mobility, and robotics.",
 
