@@ -11,7 +11,7 @@ about_us = [
 ]
 
 join_next_event = "Join our next event!"
-cards_header = "Monthly Presentations"
+cards_header = "Talks, workshops, hackathons, and more!"
 
 [[extra.card]]
 title = "Expand Your Knowledge"
