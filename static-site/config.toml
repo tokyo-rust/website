@@ -9,7 +9,9 @@ Rustaceans of all skill levels are welcome to join our ranks!
 """
 
 [markdown]
-highlight_code = true
+
+[markdown.highlighting]
+theme = "github-light"
 
 [translations]
 [languages.jp]
@@ -21,7 +23,8 @@ description = """
 
 [extra]
 events_page_link = "https://guild.host/tokyo-rust/events/upcoming/"
-donate_link = "mailto:contact@tokyorust.org"
+# Replace this value with the Stripe donation portal URL.
+stripe_donation_portal_url = "#wip"
 tokyo_rust_icon = "/tokyo-rust-outline-opt.svg"
 
 [[extra.socials]]
@@ -51,6 +54,7 @@ sponsors = "Sponsors"
 events = "Events"
 donate = "Donate"
 about_us = "About Us"
+commercial_disclosure = "Commercial Disclosure"
 code_of_conduct = "Code of Conduct"
 
 [extra.translations.jp]
@@ -60,4 +64,5 @@ sponsors = "スポンサー"
 events = "イベント"
 donate = "寄付"
 about_us = "団体概要"
+commercial_disclosure = "特定商取引法に基づく表記"
 code_of_conduct = "行動規範"
